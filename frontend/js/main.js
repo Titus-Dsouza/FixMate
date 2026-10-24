@@ -1,4 +1,36 @@
 const screens = [...document.querySelectorAll("[data-screen-panel]")];
+const THEME_STORAGE_KEY = "fixmate.theme.v1";
+const themeToggle = document.querySelector("[data-theme-toggle]");
+const themeLabel = document.querySelector("[data-theme-label]");
+const themeIcon = document.querySelector("[data-theme-icon]");
+
+function applyTheme(theme, persist = false) {
+  const isDark = theme === "dark";
+  document.documentElement.dataset.theme = isDark ? "dark" : "light";
+  document.documentElement.style.colorScheme = isDark ? "dark" : "light";
+  themeToggle.setAttribute("aria-pressed", String(isDark));
+  themeToggle.setAttribute("aria-label", `Switch to ${isDark ? "light" : "dark"} theme`);
+  themeLabel.textContent = isDark ? "Light theme" : "Dark theme";
+  themeIcon.textContent = isDark ? "☼" : "◐";
+  document.querySelector('meta[name="theme-color"]').content = isDark ? "#10251C" : "#F8F8F3";
+  if (persist) {
+    try { localStorage.setItem(THEME_STORAGE_KEY, isDark ? "dark" : "light"); } catch { /* Theme remains active for this page view. */ }
+  }
+}
+
+function getInitialTheme() {
+  try {
+    const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+    if (savedTheme === "light" || savedTheme === "dark") return savedTheme;
+  } catch { /* Use the operating-system preference when storage is unavailable. */ }
+  return window.matchMedia?.("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+applyTheme(getInitialTheme());
+themeToggle.addEventListener("click", () => {
+  applyTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark", true);
+});
+
 const getStartedButton = document.querySelector("[data-get-started]");
 const roleChoices = document.querySelectorAll("[data-role-choice]");
 const screenLinks = document.querySelectorAll("[data-screen-link]");

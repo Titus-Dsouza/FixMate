@@ -17,17 +17,17 @@
 - [x] Add repair evidence submission UI
 
 ## Phase 4: UI Polish (9:00 PM – 10:00 PM)
-- [ ] Implement light and dark modes
-- [ ] Add complaint status indicators
-- [ ] Make layouts responsive
+- [x] Implement light and dark modes
+- [x] Add complaint status indicators
+- [x] Make layouts responsive
 
 ## Lunch Break (10:00 PM – 11:00 PM)
 
 ## Phase 5: Django Backend (11:00 PM – 12:00 AM)
 - [ ] Set up Django and PostgreSQL
-- [ ] Create database models
-- [ ] Implement authentication and permissions
-- [ ] Connect complaint submission and tracking
+- [x] Create database models
+- [x] Implement authentication and permissions
+- [x] Connect complaint submission and tracking
 
 ## Phase 6: Gemini AI (12:00 AM – 1:00 AM)
 - [ ] Configure Gemini API securely

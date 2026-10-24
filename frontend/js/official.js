@@ -399,7 +399,7 @@
 
   function submitRepairEvidence(event) {
     event.preventDefault();
-    if (!selectedComplaint || !demoWorkspaceOpen || isResolved(selectedComplaint)) return;
+    if (!selectedComplaint || !demoWorkspaceOpen || isResolved(selectedComplaint) || selectedComplaint.repairEvidence) return;
     repairSubmitError.hidden = true;
     repairSubmitError.textContent = "";
     const photoValid = validateRepairPhoto();
