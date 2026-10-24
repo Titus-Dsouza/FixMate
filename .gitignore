@@ -1,0 +1,15 @@
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+
+# Python local environments and bytecode
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Local editor and operating system files
+.DS_Store
+.idea/
+.vscode/

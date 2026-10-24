@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f8f3">
+    <meta name="description" content="FixMate helps Pune residents report civic issues and follow local progress.">
+    <title>Welcome to FixMate</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/official.js" defer></script>
+  </head>
+  <body>
+    <main class="welcome-shell" id="main-content">
+      <div class="ambient ambient-one" aria-hidden="true"></div>
+      <div class="ambient ambient-two" aria-hidden="true"></div>
+
+      <header class="masthead">
+        <a class="brand" href="#welcome" aria-label="FixMate welcome">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M20 3 36 12v16L20 37 4 28V12L20 3Z" stroke="currentColor" stroke-width="1.7" />
+              <path d="m12 20 5.2 5.1L28.5 14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span class="brand-name">FixMate<span>.</span></span>
+        </a>
+        <span class="masthead-note"><span aria-hidden="true"></span> Built for Pune</span>
+      </header>
+
+      <section class="screen welcome-screen is-active" id="welcome" data-screen-panel="welcome" aria-labelledby="welcome-title">
+        <div class="welcome-copy">
+          <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> A better way to care for our city</p>
+          <h1 id="welcome-title" tabindex="-1">Spot it.<br><em>Report it.</em><br>Fix it.</h1>
+          <p class="tagline">Spot it. Report it. Fix it.</p>
+          <p class="welcome-description">Welcome to FixMate. Together, we help Pune citizens report civic issues and make government action more visible and accountable.</p>
+          <button class="button button-primary get-started" type="button" data-get-started>
+            Get Started <span class="button-arrow" aria-hidden="true">↗</span>
+          </button>
+          <p class="welcome-footnote"><span aria-hidden="true">⌖</span> Your neighbourhood is where change begins.</p>
+        </div>
+
+        <div class="welcome-art" aria-hidden="true">
+          <div class="art-orbit orbit-back"></div>
+          <div class="art-orbit orbit-front"></div>
+          <svg class="city-illustration" viewBox="0 0 520 540" fill="none">
+            <path d="M49 410h420" stroke="#b8cbbd" stroke-width="1.5" />
+            <path d="M88 410V267h104v143M192 410V192h111v218M303 410V236h126v174" fill="#edf1e9" stroke="#b8cbbd" stroke-width="1.5" />
+            <path d="M110 290h18v23h-18zm42 0h18v23h-18zm-42 43h18v23h-18zm42 0h18v23h-18zm58-109h18v23h-18zm45 0h18v23h-18zm-45 43h18v23h-18zm45 0h18v23h-18zm-45 43h18v23h-18zm45 0h18v23h-18zm-45 43h18v23h-18zm45 0h18v23h-18zm79-87h19v24h-19zm48 0h19v24h-19zm-67 45h19v24h-19zm48 0h19v24h-19zm-48 45h19v24h-19zm48 0h19v24h-19z" fill="#fff" />
+            <path d="M225 192v-48l22-30 22 30v48M235 144h24M247 114v-25" stroke="#b8cbbd" stroke-width="1.5" />
+            <path d="M247 83c9.4 0 17-7.6 17-17s-7.6-17-17-17-17 7.6-17 17 7.6 17 17 17Z" fill="#174d38" />
+            <path d="M241.5 65.5 246 70l8.5-9" stroke="#f8f8f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M45 410h425" stroke="#174d38" stroke-width="2" />
+            <path d="M83 410c0-22 17-40 38-40s38 18 38 40M344 410c0-20 16-36 36-36s36 16 36 36" stroke="#8fad94" stroke-width="1.5" />
+            <path d="M121 369c-10-12-10-25 0-38 10 13 10 26 0 38Zm274 2c-9-10-9-21 0-32 9 11 9 22 0 32Z" fill="#8fad94" />
+            <path d="M65 428h380" stroke="#d2ddd1" stroke-width="1" stroke-dasharray="3 7" />
+            <circle cx="247" cy="65" r="29" stroke="#174d38" stroke-opacity=".12" />
+            <circle cx="247" cy="65" r="43" stroke="#174d38" stroke-opacity=".08" />
+            <path d="M93 217h24m-12-12v24M426 163h24m-12-12v24" stroke="#d2a44f" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+          <div class="art-note"><span class="art-note-icon" aria-hidden="true">✓</span><span>Small actions.<br><strong>Visible progress.</strong></span></div>
+          <span class="art-caption">PUNE · MAHARASHTRA</span>
+        </div>
+      </section>
+
+      <section class="screen roles-screen" id="roles" data-screen-panel="roles" aria-labelledby="roles-title" hidden>
+        <div class="screen-heading">
+          <button class="back-link" type="button" data-screen-link="welcome"><span aria-hidden="true">←</span> Back</button>
+          <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> Welcome to your FixMate</p>
+          <h1 id="roles-title" tabindex="-1">How would you like<br>to continue?</h1>
+          <p class="screen-intro">Choose the experience that best describes you. You can always switch roles later.</p>
+        </div>
+
+        <div class="role-grid" aria-label="Choose your FixMate role">
+          <button class="role-card civilian-card" type="button" data-role-choice="civilian" aria-label="Continue as Civilian">
+            <span class="role-card-top">
+              <span class="role-icon civilian-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><path d="M24 43s15-14.2 15-25A15 15 0 1 0 9 18c0 10.8 15 25 15 25Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="24" cy="18" r="5" stroke="currentColor" stroke-width="1.8"/><path d="M16 35h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </span>
+              <span class="role-index">01</span>
+            </span>
+            <span class="role-name">Civilian</span>
+            <span class="role-description">Report civic issues, track complaints, and view area progress.</span>
+            <span class="role-action">Continue <span aria-hidden="true">↗</span></span>
+          </button>
+
+          <button class="role-card official-card" type="button" data-role-choice="official" aria-label="Continue as Government Official">
+            <span class="role-card-top">
+              <span class="role-icon official-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><path d="M6 19h36L24 7 6 19Zm4 0v19m9-19v19m10-19v19m9-19v19M5 42h38M8 38h32" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="role-index">02</span>
+            </span>
+            <span class="role-name">Government Official</span>
+            <span class="role-description">Review assigned complaints, submit repair evidence, and monitor performance.</span>
+            <span class="role-action">Continue <span aria-hidden="true">↗</span></span>
+          </button>
+        </div>
+        <p class="roles-footnote"><span aria-hidden="true">◇</span> One shared goal: stronger neighbourhoods for everyone.</p>
+      </section>
+
+      <section class="screen civilian-screen" id="civilian" data-screen-panel="civilian" aria-labelledby="civilian-heading" hidden>
+        <header class="civilian-header">
+          <div class="civilian-heading-wrap">
+            <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> CIVILIAN SPACE · PUNE</p>
+            <h1 id="civilian-heading" tabindex="-1">Your neighbourhood,<br><em>your voice.</em></h1>
+          </div>
+          <button class="role-switch" type="button" data-screen-link="roles"><span aria-hidden="true">←</span> Change role</button>
+        </header>
+
+        <nav class="civilian-nav" aria-label="Civilian options">
+          <button class="civilian-nav-item is-selected" type="button" data-civilian-tab="report" aria-current="page">File a Complaint</button>
+          <button class="civilian-nav-item" type="button" data-civilian-tab="complaints">My Complaints</button>
+          <button class="civilian-nav-item" type="button" data-civilian-tab="area-report">Area Report</button>
+        </nav>
+
+        <div class="prototype-banner" role="note"><span aria-hidden="true">ⓘ</span><p><strong>Prototype mode.</strong> AI sorting is attempted through the backend when available; otherwise a manual-report fallback is used. Confirmed entries stay in this browser and are not delivered to a government department.</p></div>
+
+        <section class="civilian-view report-view is-current" data-civilian-view="report" aria-labelledby="report-title">
+          <div class="view-heading">
+            <div><p class="eyebrow">START WITH WHAT YOU SEE</p><h2 id="report-title" tabindex="-1">File a Complaint</h2></div>
+            <span class="view-step">01 <span>/</span> 03</span>
+          </div>
+
+          <form class="complaint-form" id="complaint-form">
+            <div class="form-entry-panel" data-entry-panel>
+              <div class="form-grid">
+                <div class="field field-wide">
+                  <label for="issue-category">Issue category <span aria-hidden="true">*</span></label>
+                  <select id="issue-category" name="category" required aria-describedby="category-hint">
+                    <option value="">Select an issue category</option>
+                    <option>Roads &amp; Footpaths</option>
+                    <option>Garbage &amp; Waste</option>
+                    <option>Drainage &amp; Waterlogging</option>
+                    <option>Water Supply &amp; Leakage</option>
+                  </select>
+                  <span class="field-hint" id="category-hint">Choose the closest category.</span>
+                </div>
+                <div class="field field-wide">
+                  <label for="locality">Pune locality <span aria-hidden="true">*</span></label>
+                  <input id="locality" name="locality" type="text" list="pune-localities" maxlength="100" autocomplete="address-level3" placeholder="Enter a locality or neighbourhood" required aria-describedby="locality-hint">
+                  <datalist id="pune-localities">
+                    <option value="Aundh"><option value="Baner"><option value="Deccan"><option value="Hadapsar"><option value="Kothrud"><option value="Kondhwa"><option value="Pimpri"><option value="Shivajinagar"><option value="Viman Nagar"><option value="Wakad">
+                  </datalist>
+                  <span class="field-hint" id="locality-hint">Suggestions are examples; enter the locality that best describes the issue.</span>
+                </div>
+                <div class="field field-wide">
+                  <label for="issue-description">What needs attention? <span class="optional-label">Optional</span></label>
+                  <textarea id="issue-description" name="description" rows="5" maxlength="1000" placeholder="Describe the issue in your own words." aria-describedby="description-hint"></textarea>
+                  <span class="field-hint" id="description-hint">Describe the issue in your own words. If you leave this blank, AI can help generate a description from the uploaded photo when AI analysis is connected.</span>
+                </div>
+                <div class="field field-wide">
+                  <label for="issue-photo">Add a photo <span class="optional-label">Optional</span></label>
+                  <input id="issue-photo" name="photo" type="file" accept="image/jpeg,image/png,image/webp" aria-describedby="photo-hint photo-error">
+                  <span class="field-hint" id="photo-hint">JPG, PNG, or WebP · up to 5 MB. A preview appears here; prototype photos are not stored.</span>
+                  <p class="field-error" id="photo-error" role="alert" hidden></p>
+                  <div class="photo-preview" id="photo-preview" hidden>
+                    <img id="preview-image" alt="Preview of the selected civic issue photo">
+                    <div><span class="preview-name" id="preview-name"></span><button class="remove-photo" type="button" id="remove-photo">Remove photo</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-actions">
+                <span class="required-note"><span aria-hidden="true">*</span> Category and locality are required</span>
+                <button class="button button-primary" type="submit" data-analyze-and-review>Review complaint <span class="button-arrow" aria-hidden="true">→</span></button>
+              </div>
+              <p class="analysis-status" id="analysis-status" role="status" aria-live="polite" hidden></p>
+            </div>
+
+            <section class="review-panel" data-review-panel aria-labelledby="review-title" hidden>
+              <p class="eyebrow">PLEASE CHECK YOUR DETAILS</p>
+              <h3 id="review-title" tabindex="-1">Review your report</h3>
+              <p class="review-note">AI sorting is a recommendation. No department assignment or government registration has happened.</p>
+              <div class="review-photo" id="review-photo-panel" hidden>
+                <img class="review-image" id="review-image" alt="Photo attached to this complaint">
+              </div>
+              <dl class="review-details">
+                <div><dt>Your original category</dt><dd id="review-original-category"></dd></div>
+                <div><dt>Gemini suggested category</dt><dd id="review-suggested-category"></dd></div>
+                <div><dt>Locality</dt><dd id="review-locality"></dd></div>
+                <div id="review-original-description-row"><dt>Your description</dt><dd id="review-original-description"></dd></div>
+              </dl>
+
+              <div class="review-edit-field">
+                <label for="review-final-category">Category for this report</label>
+                <select id="review-final-category" aria-describedby="review-category-hint">
+                  <option>Roads &amp; Footpaths</option>
+                  <option>Garbage &amp; Waste</option>
+                  <option>Drainage &amp; Waterlogging</option>
+                  <option>Water Supply &amp; Leakage</option>
+                </select>
+                <span class="field-hint" id="review-category-hint">You can correct the suggested category before confirming.</span>
+              </div>
+              <p class="review-category-change" id="review-category-change" role="status" hidden>You've changed the category. The department recommendation still needs human verification.</p>
+
+              <div class="review-department-box">
+                <span class="review-label">Department recommendation</span>
+                <strong id="review-department"></strong>
+                <p id="review-department-note">Recommendation only. Exact jurisdiction has not been verified, and no department has been officially assigned.</p>
+              </div>
+
+              <div class="review-edit-field">
+                <label for="review-final-description">Final description <span class="optional-label">Optional</span></label>
+                <span class="description-source" id="review-description-source"></span>
+                <textarea id="review-final-description" rows="4" maxlength="1000" aria-describedby="review-description-source"></textarea>
+              </div>
+
+              <section class="ai-analysis-details" id="ai-analysis-details" aria-label="Gemini analysis details" hidden>
+                <div class="analysis-facts">
+                  <div><span class="review-label">Severity</span><strong id="review-severity"></strong></div>
+                  <div><span class="review-label">Confidence</span><strong id="review-confidence"></strong></div>
+                </div>
+                <div class="analysis-reasoning"><span class="review-label">Why this was suggested</span><p id="review-reasoning"></p></div>
+                <div class="review-uncertainties" id="review-uncertainties-panel" hidden>
+                  <span class="review-label">Details Gemini could not determine reliably</span>
+                  <ul id="review-uncertainties"></ul>
+                </div>
+              </section>
+              <div class="review-warning" id="review-human-review" role="note" hidden><strong>Human review recommended.</strong> The evidence may be ambiguous, insufficient, or conflicting. This report can still be saved for later review.</div>
+              <div class="review-warning manual-fallback-notice" id="review-manual-fallback" role="note" hidden><strong>Gemini analysis is unavailable.</strong> Review the information and save this as a manual prototype report. No AI result has been generated.</div>
+
+              <div class="form-actions review-actions">
+                <button class="button button-outline" type="button" data-edit-complaint>Back to edit</button>
+                <button class="button button-primary" type="button" data-confirm-complaint>Confirm and save prototype report <span class="button-arrow" aria-hidden="true">→</span></button>
+              </div>
+            </section>
+            <section class="confirmation-panel" data-confirmation-panel aria-labelledby="confirmation-title" hidden>
+              <span class="confirmation-mark" aria-hidden="true">✓</span>
+              <p class="eyebrow">LOCAL PROTOTYPE ENTRY</p>
+              <h3 id="confirmation-title" tabindex="-1">Details saved on this device.</h3>
+              <p class="confirmation-copy" data-confirmation-copy></p>
+              <p class="reference-line">Prototype reference <strong data-confirmation-reference></strong></p>
+              <div class="confirmation-actions">
+                <button class="button button-primary" type="button" data-open-complaints>View My Complaints <span class="button-arrow" aria-hidden="true">→</span></button>
+                <button class="text-button" type="button" data-new-complaint>File another complaint</button>
+              </div>
+            </section>
+          </form>
+        </section>
+
+        <section class="civilian-view complaints-view" data-civilian-view="complaints" aria-labelledby="complaints-title" hidden>
+          <div class="view-heading">
+            <div><p class="eyebrow">YOUR REPORTS, IN ONE PLACE</p><h2 id="complaints-title" tabindex="-1">My Complaints</h2></div>
+            <span class="view-step">02 <span>/</span> 03</span>
+          </div>
+          <div class="status-legend" aria-label="Complaint status meanings">
+            <span class="status-key status-key--unresolved">Unresolved</span>
+            <span class="status-key status-key--awaiting">Awaiting review / confirmation</span>
+            <span class="status-key status-key--uncertain">Validity uncertain / rejected</span>
+            <span class="status-key status-key--confirmed">Completed and citizen-confirmed</span>
+          </div>
+
+          <section class="complaint-list-section" aria-labelledby="submitted-title">
+            <div class="subsection-heading"><div><h3 id="submitted-title">Your prototype submissions</h3><p>Only entries saved by you in this browser.</p></div><span class="count-pill" data-submission-count>0</span></div>
+            <div class="complaint-list" id="submitted-complaints"></div>
+            <div class="empty-state" id="submission-empty-state">
+              <span class="empty-icon" aria-hidden="true">＋</span>
+              <h4>No prototype submissions yet</h4>
+              <p>When you save a complaint from this browser, it will appear here.</p>
+              <button class="text-button" type="button" data-open-report>File a Complaint <span aria-hidden="true">→</span></button>
+            </div>
+          </section>
+
+          <section class="complaint-list-section demo-list-section" aria-labelledby="demo-complaints-title">
+            <div class="subsection-heading"><div><span class="demo-label">DEMO DATA</span><h3 id="demo-complaints-title">Example complaints</h3><p>Fictional records for previewing status and detail cards.</p></div></div>
+            <div class="complaint-list" id="demo-complaints"></div>
+          </section>
+        </section>
+
+        <section class="civilian-view area-view" data-civilian-view="area-report" aria-labelledby="area-title" hidden>
+          <div class="view-heading">
+            <div><p class="eyebrow">A TRANSPARENT COMMUNITY SNAPSHOT</p><h2 id="area-title" tabindex="-1">Area Report</h2></div>
+            <span class="view-step">03 <span>/</span> 03</span>
+          </div>
+          <div class="demo-warning"><span aria-hidden="true">!</span><p><strong>Demonstration data only.</strong> All counts, breakdowns, and progress examples below are fictional sample values for interface preview. No real government performance or live traffic data is shown.</p></div>
+
+          <section class="report-block resolution-block" aria-labelledby="resolution-title">
+            <div class="report-block-heading"><div><span class="demo-label">SAMPLE AREA · NOT A REAL WARD</span><h3 id="resolution-title">Complaint Resolution</h3></div><span class="report-period">Demonstration period</span></div>
+            <div class="stats-grid">
+              <article class="stat-card"><span>Complaints reported</span><strong>32</strong><small>Fictional sample records</small></article>
+              <article class="stat-card stat-green"><span>Complaints resolved</span><strong>17</strong><small>Citizen-confirmed examples</small></article>
+              <article class="stat-card stat-red"><span>Complaints unresolved</span><strong>15</strong><small>Not confirmed complete</small></article>
+              <article class="stat-card stat-orange"><span>Overdue complaints</span><strong>6</strong><small>Past a fictional target window</small></article>
+            </div>
+          </section>
+
+          <div class="report-columns">
+            <section class="report-block breakdown-block" aria-labelledby="category-breakdown-title">
+              <span class="demo-label">DEMO BREAKDOWN</span><h3 id="category-breakdown-title">Local Issues</h3>
+              <div class="breakdown-row"><div><span>Roads &amp; Footpaths</span><strong>10</strong></div><div class="bar-track"><span style="--bar-width: 100%"></span></div></div>
+              <div class="breakdown-row"><div><span>Garbage &amp; Waste</span><strong>8</strong></div><div class="bar-track"><span style="--bar-width: 80%"></span></div></div>
+              <div class="breakdown-row"><div><span>Drainage &amp; Waterlogging</span><strong>7</strong></div><div class="bar-track"><span style="--bar-width: 70%"></span></div></div>
+              <div class="breakdown-row"><div><span>Water Supply &amp; Leakage</span><strong>7</strong></div><div class="bar-track"><span style="--bar-width: 70%"></span></div></div>
+            </section>
+
+            <section class="report-block breakdown-block" aria-labelledby="department-breakdown-title">
+              <span class="demo-label">SUGGESTED SERVICE AREAS · EXAMPLE ONLY</span><h3 id="department-breakdown-title">Department Performance</h3>
+              <div class="breakdown-row"><div><span>Roads &amp; Footpaths</span><strong>10</strong></div><div class="bar-track"><span style="--bar-width: 100%"></span></div></div>
+              <div class="breakdown-row"><div><span>Sanitation &amp; Waste</span><strong>8</strong></div><div class="bar-track"><span style="--bar-width: 80%"></span></div></div>
+              <div class="breakdown-row"><div><span>Drainage</span><strong>7</strong></div><div class="bar-track"><span style="--bar-width: 70%"></span></div></div>
+              <div class="breakdown-row"><div><span>Water Supply</span><strong>7</strong></div><div class="bar-track"><span style="--bar-width: 70%"></span></div></div>
+            </section>
+          </div>
+
+          <section class="report-block monthly-progress-block" aria-labelledby="monthly-progress-title">
+            <div class="report-block-heading"><div><span class="demo-label">FICTIONAL SAMPLE · NOT AUTHORITATIVE</span><h3 id="monthly-progress-title">Monthly Area Progress</h3></div><span class="report-period">Example periods</span></div>
+            <p class="progress-explainer">These sample totals illustrate area-level progress only. They do not represent actual Pune reporting, departments, or government performance.</p>
+            <div class="monthly-progress-list">
+              <div class="monthly-progress-row"><span>Sample period 1</span><div class="monthly-progress-track"><span style="--progress-width: 69%"></span></div><strong>22 reported</strong><span>11 citizen-confirmed</span></div>
+              <div class="monthly-progress-row"><span>Sample period 2</span><div class="monthly-progress-track"><span style="--progress-width: 88%"></span></div><strong>28 reported</strong><span>14 citizen-confirmed</span></div>
+              <div class="monthly-progress-row"><span>Sample period 3</span><div class="monthly-progress-track"><span style="--progress-width: 100%"></span></div><strong>32 reported</strong><span>17 citizen-confirmed</span></div>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <section class="screen placeholder-screen" id="role-home" data-screen-panel="role" aria-labelledby="role-title" hidden>
+        <div class="placeholder-content">
+          <button class="back-link" type="button" data-screen-link="roles"><span aria-hidden="true">←</span> Back to role selection</button>
+          <div class="placeholder-emblem" aria-hidden="true">
+            <svg viewBox="0 0 56 56" fill="none"><path d="M28 4 51 17v22L28 52 5 39V17L28 4Z" stroke="currentColor" stroke-width="1.6"/><path d="m18 28 7 7 14-15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> Your selected experience</p>
+          <h1 id="role-title" tabindex="-1"><span id="role-name">Government Official</span><br><em>experience</em></h1>
+          <p class="placeholder-description" id="role-description">A place for public teams to review assigned complaints, submit repair evidence, and monitor performance.</p>
+          <div class="coming-soon"><span class="coming-soon-dot" aria-hidden="true"></span><span><strong>Your FixMate tools are coming soon.</strong><br>This preview is the starting point for this role's experience.</span></div>
+          <button class="button button-outline" type="button" data-screen-link="roles">Choose a different role <span class="button-arrow" aria-hidden="true">↗</span></button>
+        </div>
+        <div class="placeholder-watermark" aria-hidden="true">F</div>
+      </section>
+
+      <section class="screen official-login-screen" data-screen-panel="official-login" aria-labelledby="official-login-title" hidden>
+        <div class="official-login-card">
+          <button class="back-link" type="button" data-official-back-roles><span aria-hidden="true">←</span> Back to role selection</button>
+          <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> GOVERNMENT OFFICIAL</p>
+          <h1 id="official-login-title" tabindex="-1">Official sign in</h1>
+          <p class="official-login-intro">Choose a demonstration department and locality to preview the matching sample complaints.</p>
+          <div class="official-demo-notice" role="note"><strong>Demonstration only.</strong> This form does not authenticate an official account. Do not enter a real password. Department and locality choices only filter fictional records; they never grant access. Django must verify an authorised account and scope before returning real complaints. No public registration is available.</div>
+          <form id="official-login-form" novalidate>
+            <div class="official-field">
+              <label for="official-email">Official email</label>
+              <input id="official-email" name="email" type="email" autocomplete="off" required aria-describedby="official-identity-hint">
+              <span class="official-field-hint" id="official-identity-hint">Demonstration input only. No account is checked.</span>
+            </div>
+            <div class="official-field">
+              <label for="official-password">Password</label>
+              <input id="official-password" name="password" type="password" autocomplete="off" required>
+            </div>
+            <div class="official-field">
+              <label for="official-department">Department</label>
+              <select id="official-department" name="department" required>
+                <option value="">Choose a demonstration department</option>
+                <option>Road Department</option>
+                <option>Solid Waste Management</option>
+                <option>Drainage Department</option>
+                <option>Water Supply Department</option>
+              </select>
+            </div>
+            <div class="official-field">
+              <label for="official-locality">Assigned locality</label>
+              <select id="official-locality" name="locality" required>
+                <option value="">Choose a demonstration locality</option>
+              </select>
+              <span class="official-field-hint">Example localities only. This selection does not establish a real assignment.</span>
+            </div>
+            <p class="official-form-error" id="official-login-error" role="alert" hidden></p>
+            <button class="button button-primary official-login-submit" type="submit">Sign in to demonstration <span class="button-arrow" aria-hidden="true">→</span></button>
+          </form>
+          <p class="official-security-note">Role selection is not authentication. Real sign-in, account approval, department/locality scope, assignments, and access permissions require Django backend enforcement.</p>
+        </div>
+      </section>
+
+      <section class="screen official-dashboard-screen" data-screen-panel="official-dashboard" aria-labelledby="official-dashboard-title" hidden>
+        <div class="official-dashboard-wrap">
+          <header class="official-header">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> OFFICIAL WORKSPACE</p>
+              <h1 id="official-dashboard-title" tabindex="-1">My Complaints &amp; Performance</h1>
+              <p id="official-scope-summary">Review fictional complaints in the selected demonstration scope.</p>
+            </div>
+            <div class="official-header-actions">
+              <span class="official-demo-pill">DEMO WORKSPACE</span>
+              <button class="text-button" type="button" data-official-sign-out>Exit workspace</button>
+            </div>
+          </header>
+
+          <div class="official-demo-banner" role="note"><strong>Fictional demonstration records.</strong> All shown complaints and work history are sample data, not government records. Department/locality choices are demo filters only. Real account scope and assignments must be verified by Django.</div>
+
+          <div class="official-page" data-official-page="overview">
+            <section class="official-metrics" aria-label="Demonstration workload summary">
+              <article class="official-metric"><span>My Complaints</span><strong id="official-metric-assigned">0</strong><small>In selected demo scope</small></article>
+              <article class="official-metric metric-green"><span>Resolved by Me</span><strong id="official-metric-completed">0</strong><small>Citizen-confirmed after sample official work</small></article>
+              <article class="official-metric metric-red"><span>Unresolved</span><strong id="official-metric-unresolved">0</strong><small>Not citizen-confirmed resolved</small></article>
+              <article class="official-metric metric-orange"><span>Overdue</span><strong id="official-metric-overdue">0</strong><small>Open, with a passed recorded deadline</small></article>
+            </section>
+
+            <section class="official-complaint-section" aria-labelledby="official-complaints-title">
+              <div class="official-section-heading"><div><p class="eyebrow">SELECTED DEPARTMENT + LOCALITY</p><h2 id="official-complaints-title">My Assigned Complaints</h2></div></div>
+              <div class="official-filter-tabs" role="group" aria-label="Filter my assigned complaints">
+                <button type="button" data-status-filter="all" aria-pressed="true">All</button>
+                <button type="button" data-status-filter="unresolved" aria-pressed="false">Unresolved</button>
+                <button type="button" data-status-filter="awaiting_confirmation" aria-pressed="false">Awaiting citizen confirmation</button>
+                <button type="button" data-status-filter="resolved" aria-pressed="false">Resolved</button>
+              </div>
+              <div id="official-complaint-list" class="official-complaint-list" aria-live="polite"></div>
+              <p class="official-empty" id="official-queue-empty" hidden>No demonstration complaints match this department and locality. Choose another demo scope or status filter.</p>
+            </section>
+          </div>
+
+          <div class="official-page official-detail-page" data-official-page="detail" hidden>
+            <button class="back-link" type="button" data-official-back-dashboard><span aria-hidden="true">←</span> Back to complaint queue</button>
+            <div class="official-detail-heading"><div><p class="eyebrow">DEMONSTRATION COMPLAINT</p><h2 id="official-detail-title" tabindex="-1">Complaint details</h2></div><span id="official-detail-status" class="official-status-panel"></span></div>
+            <p class="official-detail-reference" id="official-detail-reference"></p>
+            <div class="official-detail-grid">
+              <div class="official-detail-main">
+                <section class="official-detail-card" aria-labelledby="official-citizen-report-title"><h3 id="official-citizen-report-title">Citizen report</h3><div id="official-photo-panel" class="official-photo-panel"></div><dl class="official-detail-list" id="official-citizen-fields"></dl></section>
+                <section class="official-detail-card" aria-labelledby="official-ai-title"><div class="official-detail-card-heading"><h3 id="official-ai-title">AI classification record</h3><span class="official-demo-pill">SAMPLE DATA ONLY</span></div><dl class="official-detail-list" id="official-ai-fields"></dl><div id="official-review-flag" class="official-review-flag" hidden></div></section>
+                <section class="official-detail-card" aria-labelledby="official-assignment-title"><h3 id="official-assignment-title">Routing and assignment</h3><dl class="official-detail-list" id="official-routing-fields"></dl><p class="official-permission-note">Category and routing corrections are unavailable in this prototype. In production, only backend-authorised officials could change routing, with an audit record.</p></section>
+              </div>
+              <aside class="official-evidence-card" aria-labelledby="official-evidence-title"><p class="eyebrow">FIELD UPDATE</p><h3 id="official-evidence-title">Submit repair evidence</h3><p class="official-evidence-intro">Attach an after-repair photo and explain the work. Submission will wait for citizen confirmation.</p><div class="official-existing-evidence" id="official-existing-evidence" hidden></div>
+                <form id="repair-evidence-form" novalidate>
+                  <div class="official-field"><label for="repair-photo">After-repair photo</label><input id="repair-photo" name="photo" type="file" accept="image/jpeg,image/png,image/webp" required aria-describedby="repair-photo-hint repair-photo-error"><span class="official-field-hint" id="repair-photo-hint">JPG, PNG, or WebP · up to 5 MB</span><p id="repair-photo-error" class="official-form-error" role="alert" hidden></p><div id="repair-photo-preview" class="official-photo-preview" hidden><img id="repair-preview-image" alt="Preview of the after-repair photo"><span id="repair-preview-name"></span><button class="text-button" id="repair-remove-photo" type="button">Remove photo</button></div></div>
+                  <div class="official-field"><label for="repair-explanation">Work progress note</label><textarea id="repair-explanation" rows="4" maxlength="500" required placeholder="Briefly describe the work in progress or repair completed."></textarea></div>
+                  <p id="repair-submit-error" class="official-form-error" role="alert" hidden></p>
+                  <button class="button button-primary evidence-submit-button" type="submit">Submit evidence for review <span class="button-arrow" aria-hidden="true">→</span></button>
+                </form>
+                <p class="official-confirmation-rule">Evidence submission does not mark a complaint complete. Only the reporting citizen can confirm resolution; until then the status stays yellow.</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <span>FIXMATE <span aria-hidden="true">·</span> PUNE</span>
+        <span>Spot it. Report it. Fix it.</span>
+      </footer>
+    </main>
+  </body>
+</html>

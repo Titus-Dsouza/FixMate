@@ -1,20 +1,20 @@
 # FixMate — Development Phases
 
 ## Phase 1: Frontend Setup (6:30 PM – 7:00 PM)
-- [ ] Create project structure
-- [ ] Set up HTML, CSS, and JavaScript
-- [ ] Build the base layout and navigation
+- [x] Create project structure
+- [x] Set up HTML, CSS, and JavaScript
+- [x] Build the base layout and navigation
 
 ## Phase 2: Citizen Interface (7:00 PM – 8:00 PM)
-- [ ] Build homepage
-- [ ] Create complaint submission form
-- [ ] Create My Complaints page
-- [ ] Create Politician & Area Report page
+- [x] Build homepage
+- [x] Create complaint submission form
+- [x] Create My Complaints page
+- [x] Create Politician & Area Report page
 
 ## Phase 3: Government Interface (8:00 PM – 9:00 PM)
-- [ ] Build official dashboard
-- [ ] Display assigned and overdue complaints
-- [ ] Add repair evidence submission UI
+- [x] Build official dashboard
+- [x] Display assigned and overdue complaints
+- [x] Add repair evidence submission UI
 
 ## Phase 4: UI Polish (9:00 PM – 10:00 PM)
 - [ ] Implement light and dark modes
