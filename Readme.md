@@ -13,7 +13,7 @@ Features
 
 Tech Stack
 
-- Frontend: HTML, CSS, minimal JavaScript
+- Frontend: HTML, CSS, JavaScript
 - Backend: Python, Django
 - Database: PostgreSQL
 - AI: Google Gemini API
